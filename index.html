@@ -5,55 +5,46 @@
     <title>IOP VR Prototype</title>
     <meta name="description" content="IOP VR Prototype">
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
   </head>
   <body>
-
-    <script>
+     <script>
     // Component to change to random color on click.
     AFRAME.registerComponent('cursor-listener', {
       init: function () {
         this.el.addEventListener('click', function () {
-        this.setAttribute('src', 'images/button1highlight.png');
-        document.getElementById('hello').style.display = 'none';
-        console.log('I was clicked!');
+          this.setAttribute('src', 'images/transparent.png');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/transparent.png');
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/test_equirect.jpg');
         });
       }
     });
   </script>
 
     <a-scene>
-      <!-- Asset management system. -->
-      <a-assets>
-        <img id="my-image" src="images/Artboard.png">
-        <img id="stars" src="images/starfield2.png">
-      </a-assets>
-
-      <!-- Layout 
-      <a-curvedimage src="#my-image" height="6" radius="3.6"  theta-start="0" theta-length="360" rotation="0 0 0" position="0 1.5 0" scale="0.4 0.4 0.4"></a-curvedimage>-->
-
       <a-entity>
         <a-entity camera look-controls>
          <a-entity position="0 0 -1"
-                   geometry="primitive: ring; radiusOuter: 0.10; radiusInner: 0.07;"
+                   geometry="primitive: ring; radiusOuter: 0.08; radiusInner: 0.05;"
                    material="color: white; shader: flat"
                    cursor="maxDistance: 30; fuse: true; fuseTimeout: 1500">
             <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500" fill="forwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation> 
-            <a-animation begin="click" easing="ease-in" attribute="scale" dur="500" fill="none" from="0.1 0.1 0.1" to="1 1 1"></a-animation> 
-
-              
+            <a-animation begin="click" easing="ease-in" attribute="scale" dur="500" fill="none" from="0.1 0.1 0.1" to="1 1 1"></a-animation>               
           </a-entity>
         </a-entity>
       </a-entity>
 
-      <a-entity id="hello">
-        <a-image src="images/button1.png" cursor-listener position="0 0.5 -10" height="1.2" width="5.7"</a-image>
+      <a-entity>
+        <a-image src="images/button1.png" cursor-listener position="0 -1.5 -14" height="1.2" width="5.7"</a-image>
       </a-entity>
 
-      <a-entity><a-sky src="#stars" color="#000000"></a-sky></a-entity>
+      <a-entity>
+        <a-curvedimage id="cylinder" src="images/Artboard.png" height="6" radius="3.6"  theta-start="0" theta-length="360" rotation="0 0 0" position="0 1.5 0" scale="100 100 100"></a-curvedimage>
+      </a-entity>
+      
+      <a-entity><a-sky id="skybox" src="images/starfield2.png"></a-sky></a-entity>
     </a-scene>
-
-
-  
-
-  </body>
+ </body>
 </html>
