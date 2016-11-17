@@ -18,10 +18,10 @@
           cylinderTar.setAttribute('src', 'images/bang/bangCylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.jpg');
+          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.png');
 
           var bangTar = document.getElementById("Bang_Button");
-          bangTar.setAttribute('position', '0 -1 -14');
+          bangTar.setAttribute('position', '0 2 -14');
 
           console.log('Start event fired');
         });
@@ -37,7 +37,7 @@
           cylinderTar.setAttribute('src', 'images/q1/q1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.jpg');
+          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.png');
 
           var button1Tar = document.getElementById("Q1A1_Button");
           button1Tar.setAttribute('position', '0 -1.5 -14');
@@ -62,10 +62,10 @@
           cylinderTar.setAttribute('src', 'images/q1a1/Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q1a1/Q1A1_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q1a1/Q1A1_Skybox.png');
 
           var button1Tar = document.getElementById("Q1A1_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q1A1 event fired');
         });
@@ -85,10 +85,10 @@
           cylinderTar.setAttribute('src', 'images/q1a1/Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q1a2/Q1A2_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q1a2/Q1A2_Skybox.png');
 
-          var button1Tar = document.getElementById("Q1A1_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button1Tar = document.getElementById("Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q1A2 event fired');
         });
@@ -114,7 +114,7 @@
       }
     });
 
-    // Question 1 Answer 1 to Question 2
+    // Question 1 Answer 2 to Question 2
     AFRAME.registerComponent('q1a2-q2-event', {
       init: function () {
         this.el.addEventListener('click', function () {
@@ -146,10 +146,10 @@
           cylinderTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Skybox.png');
 
           var button1Tar = document.getElementById("Q2A1_Q1A1_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q2A1 (Q1A1) event fired');
         });
@@ -166,13 +166,13 @@
           clean1Tar.setAttribute('position', '-1000 -1000 -1000');
 
           var cylinderTar = document.getElementById("cylinder");
-          cylinderTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A2_Cylinder.png');
+          cylinderTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A2_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q2a1_q1a2/Q2A1_Q1A2_Skybox.png');
 
           var button1Tar = document.getElementById("Q2A1_Q1A2_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q2A1 (Q1A2) event fired');
         });
@@ -189,13 +189,13 @@
           clean1Tar.setAttribute('position', '-1000 -1000 -1000');
 
           var cylinderTar = document.getElementById("cylinder");
-          cylinderTar.setAttribute('src', 'images/q2a2_q1a1/Q2A2_Q1A1_Cylinder.png');
+          cylinderTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q2a2_q1a1/Q2A2_Q1A1_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q2a2_q1a1/Q2A2_Q1A1_Skybox.png');
 
           var button1Tar = document.getElementById("Q2A2_Q1A1_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q2A2 (Q1A1) event fired');
         });
@@ -212,18 +212,470 @@
           clean1Tar.setAttribute('position', '-1000 -1000 -1000');
 
           var cylinderTar = document.getElementById("cylinder");
-          cylinderTar.setAttribute('src', 'images/q2a2_q1a2/Q2A2_Q1A2_Cylinder.png');
+          cylinderTar.setAttribute('src', 'images/q2a1_q1a1/Q2A1_Q1A1_Cylinder.png');
 
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/q2a2_q1a2/Q2A2_Q1A2_Skybox.jpg');
+          skyboxTar.setAttribute('src', 'images/q2a2_q1a2/Q2A2_Q1A2_Skybox.png');
 
           var button1Tar = document.getElementById("Q2A2_Q1A2_Next_Button");
-          button1Tar.setAttribute('position', '0 -1.5 -14');
+          button1Tar.setAttribute('position', '0 2 -14');
 
           console.log('Q2A2 (Q1A2) event fired');
         });
       }
     });
+
+    // Answer 2
+    // Q2A1 A1A1 to Question 3
+    AFRAME.registerComponent('q2a1_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3/q3_Cylinder.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A1_Q1A1_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button2Tar = document.getElementById("Q3A2_Q2A1_Q1A1_Button");
+          button2Tar.setAttribute('position', '0 -3 -14');
+
+          console.log('Q2A1 Q1A1 to Q3 event fired');
+        });
+      }
+    });
+
+    // Q2A1 A1A2 to Question 3
+    AFRAME.registerComponent('q2a1_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3/q3_Cylinder.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A1_Q1A2_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button2Tar = document.getElementById("Q3A2_Q2A1_Q1A2_Button");
+          button2Tar.setAttribute('position', '0 -3 -14');
+
+          console.log('Q2A1 Q1A2 to Q3 event fired');
+        });
+      }
+    });
+
+    // Q2A2 A1A1 to Question 3
+    AFRAME.registerComponent('q2a2_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3/q3_Cylinder.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A2_Q1A1_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button2Tar = document.getElementById("Q3A2_Q2A2_Q1A1_Button");
+          button2Tar.setAttribute('position', '0 -3 -14');
+
+          console.log('Q2A2 Q1A1 to Q3 event fired');
+        });
+      }
+    });
+
+    // Q2A2 A1A2 to Question 3
+    AFRAME.registerComponent('q2a2_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3/q3_Cylinder.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A2_Q1A2_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button2Tar = document.getElementById("Q3A2_Q2A2_Q1A2_Button");
+          button2Tar.setAttribute('position', '0 -3 -14');
+
+          console.log('Q2A2 Q1A2 to Q3 event fired');
+        });
+      }
+    });
+
+    // Question 3
+    // Q3A1 Q2Q1 Q1A1
+    AFRAME.registerComponent('q3a1_q2a1_a1a1_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A2_Q2A1_Q1A1_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A1_Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A1 (Q2A1 Q1A1) event fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q1 Q1A1
+    AFRAME.registerComponent('q3a2_q2a1_a1a1_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A1_Q2A1_Q1A1_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a2_q2a1_q1a1/Q3A2_Q2A1_Q1A1_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A2_Q2A1_Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A2 (Q2A1 Q1A1) event fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q1 Q1A2
+    AFRAME.registerComponent('q3a1_q2a1_a1a2_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A2_Q2A1_Q1A2_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a1_q2a1_q1a2/Q3A1_Q2A1_Q1A2_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A1_Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A1 (Q2A1 Q1A2) event fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q1 Q1A2
+    AFRAME.registerComponent('q3a2_q2a1_a1a2_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A1_Q2A1_Q1A2_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a2_q2a1_q1a2/Q3A2_Q2A1_Q1A2_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A2_Q2A1_Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A2 (Q2A1 Q1A2) event fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q2 Q1A1
+    AFRAME.registerComponent('q3a1_q2a2_a1a1_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A2_Q2A2_Q1A1_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a1_q2a2_q1a1/Q3A1_Q2A2_Q1A1_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A2_Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A1 (Q2A2 Q1A1) event fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q2 Q1A1
+    AFRAME.registerComponent('q3a2_q2a2_a1a1_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A1_Q2A2_Q1A1_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a2_q2a2_q1a1/Q3A2_Q2A2_Q1A1_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A2_Q2A2_Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A2 (Q2A2 Q1A1) event fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q2 Q1A2
+    AFRAME.registerComponent('q3a1_q2a2_a1a2_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A2_Q2A2_Q1A2_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a1_q2a2_q1a2/Q3A1_Q2A2_Q1A2_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A1_Q2A2_Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A1 (Q2A2 Q1A2) event fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q2 Q1A2
+    AFRAME.registerComponent('q3a2_q2a2_a1a2_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clean1Tar = document.getElementById("Q3A1_Q2A2_Q1A2_Button");
+          clean1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q3a2_q2a2_q1a2/Q3A2_Q2A2_Q1A2_Skybox.png');
+
+          var button1Tar = document.getElementById("Q3A2_Q2A2_Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 2 -14');
+
+          console.log('Q3A2 (Q2A2 Q1A2) event fired');
+        });
+      }
+    });
+
+    // Gallery
+    // Q3A1 Q2Q1 Q1A1
+    AFRAME.registerComponent('q3a1_q2a1_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 0 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -2.5 -14');
+
+          console.log('Gallery event (Q3A1 Q2A1 Q1A1) fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q1 Q1A2
+    AFRAME.registerComponent('q3a1_q2a1_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 45 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -2.5 -14');
+
+          console.log('Gallery event (Q3A1 Q2A1 Q1A2) fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q2 Q1A1
+    AFRAME.registerComponent('q3a1_q2a2_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 90 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -2.5 -14');
+
+          console.log('Gallery event (Q3A1 Q2A2 Q1A1) fired');
+        });
+      }
+    });
+
+    // Q3A1 Q2Q2 Q1A2
+    AFRAME.registerComponent('q3a1_q2a2_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 135 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -2.5 -14');
+
+          console.log('Gallery event (Q3A1 Q2A2 Q1A2) fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q1 Q1A1
+    AFRAME.registerComponent('q3a2_q2a1_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 180 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -2.5 -14');
+
+          console.log('Gallery event (Q3A2 Q2A1 Q1A1) fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q1 Q1A2
+    AFRAME.registerComponent('q3a2_q2a1_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 225 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+
+          console.log('Gallery event (Q3A2 Q2A1 Q1A2) fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q2 Q1A1
+    AFRAME.registerComponent('q3a2_q2a2_a1a1_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 270 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+
+          console.log('Gallery event (Q3A2 Q2A2 Q1A1) fired');
+        });
+      }
+    });
+
+    // Q3A2 Q2Q2 Q1A2
+    AFRAME.registerComponent('q3a2_q2a2_a1a2_next_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/gallery/Gallery_Cylinder.png');
+          cylinderTar.setAttribute('rotation', '0 315 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/gallery/Gallery_Skybox.png');
+
+          var button1Tar = document.getElementById("Restart_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+
+          console.log('Gallery event (Q3A2 Q2A2 Q1A2) fired');
+        });
+      }
+    });
+
+    // Restart
+    AFRAME.registerComponent('restart_event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/start/StartCylinder.png');
+          cylinderTar.setAttribute('rotation', '0 0 0');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/start/startSkybox.png');
+
+          var button1Tar = document.getElementById("startButton");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+
+          console.log('Game restarted');
+        });
+      }
+    });
+
+
+
+
 
   </script>
 
@@ -307,26 +759,124 @@
       <!--Q2A1 Q1Q1 Next-->
 
       <a-entity>
-        <a-image id="Q2A1_Q1A1_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+        <a-image id="Q2A1_Q1A1_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" q2a1_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
 
       <!--Q2A1 Q1Q2 Next-->
 
       <a-entity>
-        <a-image id="Q2A1_Q1A2_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+        <a-image id="Q2A1_Q1A2_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" q2a1_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
 
       <!--Q2A2 Q1Q1 Next-->
 
       <a-entity>
-        <a-image id="Q2A2_Q1A1_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+        <a-image id="Q2A2_Q1A1_Next_Button" src="images/q1a1/Q1A1_Next_Button.png"  q2a2_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
 
       <!--Q2A2 Q1Q2 Next-->
 
       <a-entity>
-        <a-image id="Q2A2_Q1A2_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+        <a-image id="Q2A2_Q1A2_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" q2a2_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
+
+      <!--Question 3-->
+      <!-- Q2A1 Q1Q1-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A1_Button" src="images/q3/q3a1_Button.png" q3a1_q2a1_a1a1_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+      
+      <a-entity>
+        <a-image id="Q3A2_Q2A1_Q1A1_Button" src="images/q3/q3a2_Button.png" q3a2_q2a1_a1a1_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!-- Q2A1 Q1Q2-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A2_Button" src="images/q3/q3a1_Button.png" q3a1_q2a1_a1a2_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+      
+      <a-entity>
+        <a-image id="Q3A2_Q2A1_Q1A2_Button" src="images/q3/q3a2_Button.png" q3a2_q2a1_a1a2_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!-- Q2A2 Q1Q1-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A1_Button" src="images/q3/q3a1_Button.png" q3a1_q2a2_a1a1_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+      
+      <a-entity>
+        <a-image id="Q3A2_Q2A2_Q1A1_Button" src="images/q3/q3a2_Button.png" q3a2_q2a2_a1a1_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!-- Q2A2 Q1Q2-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A2_Button" src="images/q3/q3a1_Button.png" q3a1_q2a2_a1a2_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+      
+      <a-entity>
+        <a-image id="Q3A2_Q2A2_Q1A2_Button" src="images/q3/q3a2_Button.png" q3a2_q2a2_a1a2_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Answer Screen 3-->
+      <!--Q3A1 Q2A1 Q1Q1 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A1_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a1_q2a1_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A1 Q2A1 Q1Q2 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A2_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a1_q2a1_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A1 Q2A2 Q1Q1 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A1_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a1_q2a2_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A1 Q2A2 Q1Q2 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A2_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a1_q2a2_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A2 Q2A1 Q1Q1 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A1_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a2_q2a1_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A2 Q2A1 Q1Q2 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A1_Q1A2_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a2_q2a1_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A2 Q2A2 Q1Q1 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A1_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a2_q2a2_a1a1_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q3A2 Q2A2 Q1Q2 Next-->
+
+      <a-entity>
+        <a-image id="Q3A1_Q2A2_Q1A2_Next_Button" src="images/q3a1_q2a1_q1a1/Q3A1_Q2A1_Q1A1_Next_Button.png" q3a2_q2a2_a1a2_next_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Gallery-->
+
+      <a-entity>
+        <a-image id="Restart_Button" src="images/gallery/RestartButton.png" restart_event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+
 
       
     </a-scene>
