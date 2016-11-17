@@ -9,19 +9,92 @@
   </head>
   <body>
      <script>
-    // Component to change to random color on click.
-    AFRAME.registerComponent('cursor-listener', {
+    // Start
+    AFRAME.registerComponent('start-event', {
       init: function () {
         this.el.addEventListener('click', function () {
-          this.setAttribute('src', 'images/transparent.png');
+          this.setAttribute('position', '-1000 -1000 -1000');
           var cylinderTar = document.getElementById("cylinder");
-          cylinderTar.setAttribute('src', 'images/transparent.png');
+          cylinderTar.setAttribute('src', 'images/bang/bangCylinder.png');
+
           var skyboxTar = document.getElementById("skybox");
-          skyboxTar.setAttribute('src', 'images/test_equirect.jpg');
-          console.log('I was clicked');
+          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.jpg');
+
+          var bangTar = document.getElementById("Bang_Button");
+          bangTar.setAttribute('position', '0 -1 -14');
+
+          console.log('Start event fired');
         });
       }
     });
+
+    // Bang
+    AFRAME.registerComponent('bang-event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          this.setAttribute('position', '-1000 -1000 -1000');
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q1/q1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/bang/bangSkybox.jpg');
+
+          var button1Tar = document.getElementById("Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+          var button2Tar = document.getElementById("Q1A2_Next_Button");
+          button2Tar.setAttribute('position', '0 -3 -14');
+
+          console.log('Bang event fired');
+        });
+      }
+    });
+
+    // Question 1
+    
+    AFRAME.registerComponent('questionOne-event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          console.log('q1a1 event fired');
+
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clear1Tar = document.getElementById("Q1A2_Button");
+          clear1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q1a1/Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q1a1/Q1A1_Skybox.jpg');
+
+          var button1Tar = document.getElementById("Q1A1_Next_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');
+        });
+      }
+    });
+
+    AFRAME.registerComponent('questionTwo-event', {
+      init: function () {
+        this.el.addEventListener('click', function () {
+          console.log('q1a2 event fired');
+
+          this.setAttribute('position', '-1000 -1000 -1000');
+
+          var clear1Tar = document.getElementById("Q1A1_Button");
+          clear1Tar.setAttribute('position', '-1000 -1000 -1000');
+
+          var cylinderTar = document.getElementById("cylinder");
+          cylinderTar.setAttribute('src', 'images/q1a1/Q1A1_Cylinder.png');
+
+          var skyboxTar = document.getElementById("skybox");
+          skyboxTar.setAttribute('src', 'images/q1a2/Q1A2_Skybox.jpg');
+
+          var button1Tar = document.getElementById("Q1A2_Next_Button");
+          button1Tar.setAttribute('position', '0 -1.5 -14');  
+        });
+      }
+    }); 
+
   </script>
 
     <a-scene>
@@ -37,15 +110,48 @@
         </a-entity>
       </a-entity>
 
+      <!-- Initial Setup -->
+      <!--Start-->
+
       <a-entity>
-        <a-image id="splashbutton" src="images/button1.png" cursor-listener position="0 -1.5 -14" height="1.2" width="5.7"</a-image>
+        <a-curvedimage id="cylinder" src="images/start/StartCylinder.png" height="6" radius="3.6"  theta-start="0" theta-length="360" rotation="0 0 0" position="0 1.5 0" scale="100 100 100"></a-curvedimage>
+      </a-entity>
+      
+      <a-entity><a-sky id="skybox" src="images/start/startSkybox.png"></a-sky></a-entity>
+
+      <a-entity>
+        <a-image id="startButton" src="images/start/startButton.png" start-event position="0 -1.5 -14" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Big Bang-->
+
+      <a-entity>
+        <a-image id="Bang_Button" src="images/bang/bangButton.png" bang-event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Question 1-->
+
+      <a-entity>
+        <a-image id="Q1A1_Button" src="images/q1/q1a1_Button.png" questionOne-event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
 
       <a-entity>
-        <a-curvedimage id="cylinder" src="images/Artboard.png" height="6" radius="3.6"  theta-start="0" theta-length="360" rotation="0 0 0" position="0 1.5 0" scale="100 100 100"></a-curvedimage>
+        <a-image id="Q1A2_Button" src="images/q1/q1a2_Button.png" questionTwo-event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
       </a-entity>
+
+      <!--Q1A1-->
+
+      <a-entity>
+        <a-image id="Q1A1_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" q1a1-q2-event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
+      <!--Q1A2-->
+
+      <a-entity>
+        <a-image id="Q1A2_Next_Button" src="images/q1a1/Q1A1_Next_Button.png" q1a2-q2-event position="-1000 -1000 -1000" height="1.2" width="5.7"</a-image>
+      </a-entity>
+
       
-      <a-entity><a-sky id="skybox" src="images/starfield2.png"></a-sky></a-entity>
     </a-scene>
  </body>
 </html>
